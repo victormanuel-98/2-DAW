@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Mi Tienda Temática</title>
+     <link rel="shortcut icon" href="imagenes/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ONILAB</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo1.html">Catálogo</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="sobre.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección carrito -->
+    <section class="carrito">
+        <h2>Tu Carrito</h2>
+
+        <table class="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/camiseta-naruto.jpg" alt="Camiseta Naruto"></td>
+                    <td>Camiseta Naruto</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>19,99 €</td>
+                    <td>19,99 €</td>
+                    <td><button class="eliminar">❌</button></td>
+                </tr>
+                <tr>
+                    <td><img src="img/sudadera-marvel.jpg" alt="Sudadera Marvel"></td>
+                    <td>Sudadera Marvel</td>
+                    <td><input type="number" value="2" min="1"></td>
+                    <td>34,99 €</td>
+                    <td>69,98 €</td>
+                    <td><button class="eliminar">❌</button></td>
+                </tr>
+                <!-- Repite para más productos -->
+            </tbody>
+        </table>
+
+        <div class="resumen-compra">
+            <p>Subtotal: 89,97 €</p>
+            
