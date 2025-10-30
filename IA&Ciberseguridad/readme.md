@@ -45,6 +45,3 @@ Durante el curso se realizarán varios ejercicios y proyectos prácticos, entre 
 - **Wireshark**, **Metasploit Framework**  
 - **Docker**, **GitHub Actions** para automatización y pruebas  
 - **VS Code** o **PyCharm** como entorno de desarrollo  
-
- ┣ 📄 README.md
- ┗ 📄 .gitignore
