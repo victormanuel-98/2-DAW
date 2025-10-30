@@ -55,7 +55,6 @@ Hoy en día, gracias al auge de las inteligencias artificiales, tenemos muchas o
 
 **Prueba:** Se le pidió a ChatGPT que generase un fragmento de código JavaScript que calcule la media de una lista de números.
 
-```javascript
 function calcularMedia(numeros) {
   let suma = 0;
   for (let num of numeros) {
@@ -125,7 +124,7 @@ Se probó **Codeium** en **Visual Studio Code** con un archivo JavaScript.
 
 **Prueba realizada:**  
 Se escribió el comentario:
-```javascript
+
 // función que calcule si un número es primo
 
 function esPrimo(numero) {
