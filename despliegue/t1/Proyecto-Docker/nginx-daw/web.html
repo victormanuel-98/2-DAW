@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Web con NGINX y API</title>
+</head>
+<body>
+    <h1>🌐 Bienvenido a Docker-landia</h1>
+    <p>Esta página está servida por NGINX en un contenedor Docker.</p>
+
+    <button id="btn" type="button">Llamar a la API</button>
+    <p id="respuesta"></p>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', async () => {
+            try {
+                const res = await fetch('/api/');
+                const data = await res.text();
+                document.getElementById('respuesta').innerText = data;
+            } catch (error) {
+                document.getElementById('respuesta').innerText = '❌ Error al conectar con la API';
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+</html>

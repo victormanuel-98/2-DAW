@@ -1,0 +1,20 @@
+services:
+  api-rest:
+    build: ./api-rest-daw
+    container_name: api-rest
+    networks:
+      - adaitsnetwork
+    ports:
+      - "3000:3000"
+
+  web-nginx:
+    build: ./nginx-daw
+    container_name: web-nginx
+    networks:
+      - adaitsnetwork
+    ports:
+      - "8080:80"
+
+networks:
+  adaitsnetwork:
+    external: true
