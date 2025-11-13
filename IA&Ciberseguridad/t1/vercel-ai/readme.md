@@ -48,7 +48,7 @@ curl -X POST http://localhost:3000/chat \
 -d "{\"prompt\":\"Hola, IA, muéstrame un ejemplo de respuesta\"}"
 ```
 
-![Terminal con curl](imagen_terminal.png)
+![Terminal con curl](./pruebaCurl.png)
 
 2. Prueba con #Postman#
 
