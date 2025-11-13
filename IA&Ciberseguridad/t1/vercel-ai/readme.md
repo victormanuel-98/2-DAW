@@ -47,7 +47,7 @@ curl -X POST http://localhost:3000/chat \
 -H "Content-Type: application/json" \
 -d "{\"prompt\":\"Hola, IA, muéstrame un ejemplo de respuesta\"}"
 ```
-
+## Imagen
 ![Terminal con curl](./pruebaCurl.png)
 
 2. Prueba con #Postman#
@@ -57,7 +57,13 @@ curl -X POST http://localhost:3000/chat \
   "prompt": "Hola, IA, muéstrame un ejemplo de respuesta"
 }
 ```
+## Imagen
+![Postman mostrando la interfaz](./pruebaPostman.png)
 
-![Postman mostrando la interfaz](images/imagen_postman.png)
+3. Prueba desde url
+
+## Imagen
+![URL desde servidor Localhost3000](./serverLocalhost.png)
+
 
 
