@@ -1,7 +1,3 @@
-¡Por supuesto\! Aquí tienes el enunciado completo del ejercicio de Piedra, Papel o Tijeras con análisis predictivo, formateado como un documento Markdown claro y estructurado.
-
------
-
 # 📝 Enunciado del Ejercicio: Piedra, Papel o Tijeras con Análisis Predictivo
 
 Este documento describe la mecánica y los esquemas de datos para un ejercicio automatizado de **Piedra, Papel o Tijeras** donde la **Máquina (IA)** actúa como un agente analítico, intentando predecir el patrón de juego del **Jugador (Usuario)**.
