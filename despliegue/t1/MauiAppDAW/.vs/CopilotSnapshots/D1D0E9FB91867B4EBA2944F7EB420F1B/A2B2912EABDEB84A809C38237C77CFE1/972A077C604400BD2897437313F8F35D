@@ -1,0 +1,32 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiAppDAW.Models"
+             x:Class="MauiAppDAW.Views.PlanetsPage"
+             x:DataType="models:Planet"
+             Title="Planetas">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto">
+            <Entry x:Name="txtSearch" Placeholder="Buscar planetas..." />
+            <Button Text="Buscar" Clicked="OnSearchClicked" Grid.Column="1" />
+        </Grid>
+
+        <CollectionView x:Name="cvResults" SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Planet">
+                    <Border Stroke="Gray" StrokeShape="RoundRectangle 5" Padding="10" Margin="5">
+                        <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto">
+                            <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+                            <Label Text="{Binding Climate}" FontSize="12" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="8" Grid.Row="1" Grid.ColumnSpan="2">
+                                <Label Text="Terreno:" FontAttributes="Bold" FontSize="12" />
+                                <Label Text="{Binding Terrain}" FontSize="12" />
+                            </StackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

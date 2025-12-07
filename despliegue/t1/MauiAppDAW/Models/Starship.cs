@@ -1,0 +1,37 @@
+using System.Text.Json.Serialization;
+
+namespace MauiAppDAW.Models;
+
+public class Starship
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("model")]
+    public string? Model { get; set; }
+
+    [JsonPropertyName("manufacturer")]
+    public string? Manufacturer { get; set; }
+
+    // SWAPI returns array of pilot URLs
+    [JsonPropertyName("pilots")]
+    public List<string>? Pilots { get; set; }
+
+    [JsonIgnore]
+    public string? ExternalImageUrl { get; set; }
+
+    [JsonIgnore]
+    public string? DisplayImageUrl { get; set; }
+
+    // Additional enriched properties
+    public string? World { get; set; }
+    public string? Owner { get; set; }
+
+    public DateTime? SavedAt { get; set; }
+
+    [JsonIgnore]
+    public string OwnerDisplay => string.IsNullOrWhiteSpace(Owner) ? "Desconocido" : Owner;
+
+    [JsonIgnore]
+    public string WorldDisplay => string.IsNullOrWhiteSpace(World) ? "Desconocido" : World;
+}

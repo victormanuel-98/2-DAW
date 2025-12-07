@@ -1,0 +1,75 @@
+﻿using MauiAppDAW.Models;
+using System.Net.Http;
+using System.Net.Http.Json;
+
+namespace MauiAppDAW.Views;
+
+public partial class MainPage : ContentPage
+{
+    private readonly HttpClient _httpClient = new HttpClient();
+
+    public MainPage()
+    {
+        InitializeComponent();
+    }
+
+    private async void OnSearchClicked(object sender, EventArgs e)
+    {
+        var name = txtName.Text?.Trim();
+        if (string.IsNullOrEmpty(name))
+        {
+            await DisplayAlert("Error", "Escribe un nombre", "OK");
+            return;
+        }
+
+        lblResult.Text = $"Buscando: {name}...";
+
+        try
+        {
+            // URL de la API pública en Azure
+            var url = $"https://swapidespliegue-asegb7hjh6aefkfw.spaincentral-01.azurewebsites.net/characters?name={Uri.EscapeDataString(name)}";
+
+            // Obtenemos y deserializamos la respuesta
+            var response = await _httpClient.GetFromJsonAsync<SWAPIResponse>(url);
+
+            if (response?.Results != null && response.Results.Count > 0)
+            {
+                var character = response.Results[0]; // mostrar solo el primero
+                lblResult.Text = $"Nombre: {character.Name}\n" +
+                                 $"Altura: {character.Height}\n" +
+                                 $"Masa: {character.Mass}\n" +
+                                 $"Color de pelo: {character.HairColor}\n" +
+                                 $"Color de piel: {character.SkinColor}\n" +
+                                 $"Color de ojos: {character.EyeColor}\n" +
+                                 $"Año de nacimiento: {character.BirthYear}\n" +
+                                 $"Género: {character.Gender}";
+            }
+            else
+            {
+                lblResult.Text = "No se encontró ningún personaje.";
+            }
+        }
+        catch (Exception ex)
+        {
+            lblResult.Text = $"Error: {ex.Message}";
+        }
+    }
+}
+
+// Clases para deserializar la respuesta de SWAPI
+public class SWAPIResponse
+{
+    public List<Character>? Results { get; set; }
+}
+
+public class Character
+{
+    public string Name { get; set; } = "";
+    public string Height { get; set; } = "";
+    public string Mass { get; set; } = "";
+    public string HairColor { get; set; } = "";
+    public string SkinColor { get; set; } = "";
+    public string EyeColor { get; set; } = "";
+    public string BirthYear { get; set; } = "";
+    public string Gender { get; set; } = "";
+}

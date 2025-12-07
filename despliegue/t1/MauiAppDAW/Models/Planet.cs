@@ -1,0 +1,34 @@
+using System.Text.Json.Serialization;
+
+namespace MauiAppDAW.Models;
+
+public class Planet
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("climate")]
+    public string? Climate { get; set; }
+
+    [JsonPropertyName("terrain")]
+    public string? Terrain { get; set; }
+
+    [JsonPropertyName("residents")]
+    public List<string>? Residents { get; set; }
+
+    [JsonPropertyName("films")]
+    public List<string>? Films { get; set; }
+
+    [JsonIgnore]
+    public string? ExternalImageUrl { get; set; }
+
+    [JsonIgnore]
+    public string? DisplayImageUrl { get; set; }
+
+    // Enriched properties
+    public string? System { get; set; }
+    public List<string>? NearbyPlanets { get; set; }
+    public List<string>? FamousResidents { get; set; }
+
+    public DateTime? SavedAt { get; set; }
+}

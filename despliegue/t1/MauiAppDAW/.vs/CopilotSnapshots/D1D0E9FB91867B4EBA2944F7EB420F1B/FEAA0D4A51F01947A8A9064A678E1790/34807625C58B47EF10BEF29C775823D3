@@ -1,0 +1,19 @@
+﻿using MauiAppDAW.Views;
+
+namespace MauiAppDAW;
+
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
+    }
+
+    // Sobrescribimos CreateWindow en lugar de usar MainPage.set
+    protected override Window CreateWindow(IActivationState? activationState)
+    {
+        // Creamos la ventana principal con MainPage desde Views
+        var window = new Window(new MainPage());
+        return window;
+    }
+}

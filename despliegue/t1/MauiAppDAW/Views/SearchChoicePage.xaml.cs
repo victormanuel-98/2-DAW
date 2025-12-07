@@ -1,0 +1,55 @@
+using System;
+using Microsoft.Maui.Controls;
+using Microsoft.Extensions.DependencyInjection;
+using MauiAppDAW.Services;
+using System.Net.Http;
+
+namespace MauiAppDAW.Views;
+
+public partial class SearchChoicePage : ContentPage
+{
+    public SearchChoicePage()
+    {
+        InitializeComponent();
+
+        btnCharacters.Clicked += BtnCharacters_Clicked;
+        btnStarships.Clicked += BtnStarships_Clicked;
+        btnPlanets.Clicked += BtnPlanets_Clicked;
+        btnHistory.Clicked += BtnHistory_Clicked;
+    }
+
+    private async void BtnCharacters_Clicked(object? sender, EventArgs e)
+    {
+        var provider = App.ServiceProvider;
+        var swapi = provider?.GetService<SwapiService>() ?? new SwapiService(new HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") }, "https://swudb.com");
+        var history = provider?.GetService<SearchHistoryService>() ?? new SearchHistoryService();
+        var page = new MainPage(swapi, history);
+        await Navigation.PushAsync(page);
+    }
+
+    private async void BtnStarships_Clicked(object? sender, EventArgs e)
+    {
+        var provider = App.ServiceProvider;
+        var swapi = provider?.GetService<SwapiService>() ?? new SwapiService(new HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") }, "https://swudb.com");
+        var history = provider?.GetService<SearchHistoryService>() ?? new SearchHistoryService();
+        var page = new StarshipsPage(swapi, history);
+        await Navigation.PushAsync(page);
+    }
+
+    private async void BtnPlanets_Clicked(object? sender, EventArgs e)
+    {
+        var provider = App.ServiceProvider;
+        var swapi = provider?.GetService<SwapiService>() ?? new SwapiService(new HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") }, "https://swudb.com");
+        var history = provider?.GetService<SearchHistoryService>() ?? new SearchHistoryService();
+        var page = new PlanetsPage(swapi, history);
+        await Navigation.PushAsync(page);
+    }
+
+    private async void BtnHistory_Clicked(object? sender, EventArgs e)
+    {
+        var provider = App.ServiceProvider;
+        var history = provider?.GetService<SearchHistoryService>() ?? new SearchHistoryService();
+        var page = new HistoryPage(history);
+        await Navigation.PushAsync(page);
+    }
+}

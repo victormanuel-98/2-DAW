@@ -1,0 +1,22 @@
+﻿using MauiAppDAW.Views;
+
+namespace MauiAppDAW;
+
+public partial class App : Application
+{
+    private readonly IServiceProvider _serviceProvider;
+
+    public App(IServiceProvider serviceProvider)
+    {
+        InitializeComponent();
+        _serviceProvider = serviceProvider;
+    }
+
+    // Sobrescribimos CreateWindow en lugar de usar MainPage.set
+    protected override Window CreateWindow(IActivationState? activationState)
+    {
+        var mainPage = _serviceProvider.GetService<MainPage>() ?? new MainPage();
+        var window = new Window(mainPage);
+        return window;
+    }
+}

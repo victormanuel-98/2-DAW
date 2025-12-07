@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDAW.Views.MainPage"
+             Title="Star Wars API">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Buscar personaje" FontSize="24" />
+        <Entry x:Name="txtName" Placeholder="Escribe el nombre..." />
+        <Button Text="Buscar" Clicked="OnSearchClicked" />
+        <Label x:Name="lblResult" TextColor="Black" />
+    </VerticalStackLayout>
+</ContentPage>

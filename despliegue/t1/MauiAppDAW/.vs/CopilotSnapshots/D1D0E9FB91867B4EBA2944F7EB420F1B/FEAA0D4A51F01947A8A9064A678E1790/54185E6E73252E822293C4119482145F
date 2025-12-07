@@ -1,0 +1,44 @@
+﻿using Microsoft.Extensions.Logging;
+using MauiAppDAW.Services;
+using System.Net.Http;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace MauiAppDAW
+{
+    public static class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                });
+
+#if DEBUG
+    		builder.Logging.AddDebug();
+#endif
+
+            // Configure HttpClient for SwapiService
+            builder.Services.AddHttpClient<SwapiService>(client =>
+            {
+                client.BaseAddress = new Uri("https://swapi.dev/api/");
+                client.Timeout = TimeSpan.FromSeconds(30);
+            })
+            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
+            {
+                ConnectTimeout = TimeSpan.FromSeconds(10),
+                PooledConnectionLifetime = TimeSpan.FromMinutes(5),
+                EnableMultipleHttp2Connections = false
+            });
+
+            // Register MainPage for DI so it can receive SwapiService
+            builder.Services.AddTransient<Views.MainPage>();
+
+            return builder.Build();
+        }
+    }
+}

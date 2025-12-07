@@ -1,0 +1,27 @@
+﻿using System;
+using Microsoft.Maui.Controls;
+using MauiAppDAW.Services;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace MauiAppDAW.Views;
+
+public partial class StarshipsPage : ContentPage
+{
+    private readonly SwapiService? _swapiService;
+
+    public StarshipsPage()
+    {
+        InitializeComponent();
+        _swapiService = App.ServiceProvider?.GetService<SwapiService>();
+    }
+
+    private async void OnSearchClicked(object sender, EventArgs e)
+    {
+        var name = txtSearch.Text?.Trim();
+        if (string.IsNullOrEmpty(name))
+            return;
+
+        var results = _swapiService != null ? await _swapiService.GetStarshipsAsync(name) : null;
+        cvResults.ItemsSource = results ?? new System.Collections.Generic.List<Models.Starship>();
+    }
+}

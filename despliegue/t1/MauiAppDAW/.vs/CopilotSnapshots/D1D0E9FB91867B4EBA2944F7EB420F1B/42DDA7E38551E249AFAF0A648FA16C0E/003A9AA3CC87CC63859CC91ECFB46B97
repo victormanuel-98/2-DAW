@@ -1,0 +1,49 @@
+﻿using System;
+using Microsoft.Maui.Controls;
+using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
+using MauiAppDAW.Services;
+
+namespace MauiAppDAW.Views;
+
+public partial class LoginPage : ContentPage
+{
+    public LoginPage()
+    {
+        InitializeComponent();
+    }
+
+    private async void OnLoginClicked(object sender, EventArgs e)
+    {
+        var username = txtUsername.Text?.Trim();
+        var password = txtPassword.Text?.Trim();
+
+        if (username == "User123" && password == "1234")
+        {
+            MainPage mainPage;
+
+            if (App.ServiceProvider != null)
+            {
+                // Try resolve MainPage from DI (it will receive SwapiService)
+                mainPage = App.ServiceProvider.GetService<MainPage>() ?? CreateFallbackMainPage();
+            }
+            else
+            {
+                mainPage = CreateFallbackMainPage();
+            }
+
+            await Navigation.PushAsync(mainPage);
+        }
+        else
+        {
+            lblMessage.Text = "Usuario o contraseña incorrectos.";
+        }
+    }
+
+    private MainPage CreateFallbackMainPage()
+    {
+        var httpClient = new HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") };
+        var swapi = new SwapiService(httpClient);
+        return new MainPage(swapi);
+    }
+}

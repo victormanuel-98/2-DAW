@@ -1,0 +1,14 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDAW.Views.SearchChoicePage"
+             Title="Buscar">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Label Text="Elige categoria" Style="{StaticResource SW-Title}" />
+        <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+            <Button x:Name="btnCharacters" Text="Personajes" Style="{StaticResource SW-AccentButton}" />
+            <Button x:Name="btnStarships" Text="Naves" Style="{StaticResource SW-AccentButton}" />
+            <Button x:Name="btnPlanets" Text="Planetas" Style="{StaticResource SW-AccentButton}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

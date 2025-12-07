@@ -1,0 +1,24 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiAppDAW.Models"
+             x:Class="MauiAppDAW.Views.StarshipsPage"
+             x:DataType="models:Starship"
+             Title="Naves">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Entry x:Name="txtSearch" Placeholder="Buscar naves..." />
+        <Button Text="Buscar" Clicked="OnSearchClicked" />
+        <CollectionView x:Name="cvResults">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Starship">
+                    <Border Stroke="Gray" StrokeShape="RoundRectangle 5" Padding="10" Margin="5">
+                        <StackLayout>
+                            <Label Text="{Binding Name}" FontSize="18" />
+                            <Label Text="{Binding Model}" FontSize="12" />
+                        </StackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

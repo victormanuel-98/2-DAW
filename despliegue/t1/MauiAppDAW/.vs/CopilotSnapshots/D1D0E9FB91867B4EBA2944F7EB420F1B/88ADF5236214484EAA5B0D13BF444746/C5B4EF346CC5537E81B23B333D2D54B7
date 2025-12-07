@@ -1,0 +1,34 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiAppDAW.Models"
+             x:Class="MauiAppDAW.Views.StarshipsPage"
+             x:DataType="models:Starship"
+             Title="Naves">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto">
+            <Entry x:Name="txtSearch" Placeholder="Buscar naves..." />
+            <HorizontalStackLayout Grid.Column="1" Spacing="6">
+                <Button Text="Buscar" Clicked="OnSearchClicked" Style="{StaticResource SW-AccentButton}" />
+                <Button Text="Guardados" Clicked="OnSavedClicked" Style="{StaticResource SW-AccentButton}" />
+            </HorizontalStackLayout>
+        </Grid>
+
+        <CollectionView x:Name="cvResults" SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Starship">
+                    <Border Style="{StaticResource SW-Card}" Margin="0,4">
+                        <Grid ColumnDefinitions="80, *" RowDefinitions="Auto">
+                            <Image WidthRequest="70" HeightRequest="70" Aspect="AspectFill" Source="{Binding DisplayImageUrl}"/>
+                            <StackLayout Grid.Column="1" Padding="10,0,0,0" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontSize="18" TextColor="{StaticResource SW-Accent}" />
+                                <Label Text="{Binding Manufacturer}" FontSize="12" TextColor="{StaticResource SW-TextMuted}" />
+                                <Label Text="Modelo: {Binding Model}" FontSize="12" />
+                            </StackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

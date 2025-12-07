@@ -1,0 +1,23 @@
+﻿using System.Text.Json.Serialization;
+
+namespace MauiAppDAW.Models;
+
+public class Planet
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("climate")]
+    public string? Climate { get; set; }
+
+    [JsonPropertyName("terrain")]
+    public string? Terrain { get; set; }
+
+    [JsonIgnore]
+    public string? ExternalImageUrl { get; set; }
+
+    [JsonIgnore]
+    public string? DisplayImageUrl { get; set; }
+
+    public DateTime? SavedAt { get; set; }
+}

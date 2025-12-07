@@ -1,0 +1,67 @@
+﻿using System.Text.Json.Serialization;
+
+namespace MauiAppDAW.Models;
+
+public class Character
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("height")]
+    public required string Height { get; set; }
+
+    [JsonPropertyName("mass")]
+    public required string Mass { get; set; }
+
+    [JsonPropertyName("hair_color")]
+    public required string HairColor { get; set; }
+
+    [JsonPropertyName("skin_color")]
+    public required string SkinColor { get; set; }
+
+    [JsonPropertyName("eye_color")]
+    public required string EyeColor { get; set; }
+
+    [JsonPropertyName("birth_year")]
+    public required string BirthYear { get; set; }
+
+    [JsonPropertyName("gender")]
+    public required string Gender { get; set; }
+
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+
+    [JsonIgnore]
+    public string ImageUrl
+    {
+        get
+        {
+            try
+            {
+                if (!string.IsNullOrWhiteSpace(Url))
+                {
+                    var trimmed = Url.TrimEnd('/');
+                    var parts = trimmed.Split('/');
+                    var id = parts.LastOrDefault();
+                    if (!string.IsNullOrWhiteSpace(id))
+                        return $"https://starwars-visualguide.com/assets/img/characters/{id}.jpg";
+                }
+
+                // fallback empty
+                return string.Empty;
+            }
+            catch
+            {
+                return string.Empty;
+            }
+        }
+    }
+
+    [JsonIgnore]
+    public string? ExternalImageUrl { get; set; }
+
+    [JsonIgnore]
+    public string? DisplayImageUrl { get; set; }
+
+    public DateTime? SavedAt { get; set; }
+}

@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiAppDAW.Models"
+             x:DataType="models:Character"
+             x:Class="MauiAppDAW.Views.PersonDetailPage"
+             Title="Detalle del personaje">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Image Source="{Binding DisplayImageUrl}" HeightRequest="200" Aspect="AspectFit" />
+            <Label Text="{Binding Name}" Style="{StaticResource SW-Title}" />
+            <Border Style="{StaticResource SW-Card}">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Altura: {Binding Height}" />
+                    <Label Text="Masa: {Binding Mass}" />
+                    <Label Text="Color de pelo: {Binding HairColor}" />
+                    <Label Text="Color de piel: {Binding SkinColor}" />
+                    <Label Text="Color de ojos: {Binding EyeColor}" />
+                    <Label Text="Año de nacimiento: {Binding BirthYear}" />
+                    <Label Text="Género: {Binding Gender}" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

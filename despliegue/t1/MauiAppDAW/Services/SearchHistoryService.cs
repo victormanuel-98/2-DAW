@@ -1,0 +1,164 @@
+using System.Text.Json;
+using MauiAppDAW.Models;
+
+namespace MauiAppDAW.Services;
+
+public class SearchHistoryService
+{
+    private readonly string _dataPath;
+    private readonly object _lock = new();
+    private const int MaxItemsPerCategory = 200;
+
+    public SearchHistoryService()
+    {
+        var folder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        _dataPath = Path.Combine(folder, "search_history.json");
+    }
+
+    public async Task SaveCharactersAsync(IEnumerable<Character> characters)
+    {
+        var data = await ReadAllAsync();
+        data.Characters = data.Characters ?? new List<Character>();
+
+        foreach (var ch in characters)
+        {
+            ch.SavedAt = DateTime.UtcNow;
+            data.Characters.Add(ch);
+        }
+
+        data.Characters = data.Characters
+            .GroupBy(c => c.Name)
+            .Select(g => g.OrderByDescending(x => x.SavedAt).First())
+            .OrderByDescending(c => c.SavedAt)
+            .Take(MaxItemsPerCategory)
+            .ToList();
+
+        await WriteAllAsync(data);
+    }
+
+    public async Task SaveStarshipsAsync(IEnumerable<Starship> starships)
+    {
+        var data = await ReadAllAsync();
+        data.Starships = data.Starships ?? new List<Starship>();
+
+        foreach (var s in starships)
+        {
+            s.SavedAt = DateTime.UtcNow;
+            data.Starships.Add(s);
+        }
+
+        data.Starships = data.Starships
+            .GroupBy(s => s.Name)
+            .Select(g => g.OrderByDescending(x => x.SavedAt).First())
+            .OrderByDescending(s => s.SavedAt)
+            .Take(MaxItemsPerCategory)
+            .ToList();
+
+        await WriteAllAsync(data);
+    }
+
+    public async Task SavePlanetsAsync(IEnumerable<Planet> planets)
+    {
+        var data = await ReadAllAsync();
+        data.Planets = data.Planets ?? new List<Planet>();
+
+        foreach (var p in planets)
+        {
+            p.SavedAt = DateTime.UtcNow;
+            data.Planets.Add(p);
+        }
+
+        data.Planets = data.Planets
+            .GroupBy(p => p.Name)
+            .Select(g => g.OrderByDescending(x => x.SavedAt).First())
+            .OrderByDescending(p => p.SavedAt)
+            .Take(MaxItemsPerCategory)
+            .ToList();
+
+        await WriteAllAsync(data);
+    }
+
+    public async Task<List<Character>> GetSavedCharactersAsync()
+    {
+        var data = await ReadAllAsync();
+        return data.Characters ?? new List<Character>();
+    }
+
+    public async Task<List<Starship>> GetSavedStarshipsAsync()
+    {
+        var data = await ReadAllAsync();
+        return data.Starships ?? new List<Starship>();
+    }
+
+    public async Task<List<Planet>> GetSavedPlanetsAsync()
+    {
+        var data = await ReadAllAsync();
+        return data.Planets ?? new List<Planet>();
+    }
+
+    public async Task RemoveCharacterAsync(string name)
+    {
+        var data = await ReadAllAsync();
+        data.Characters = data.Characters?.Where(c => !string.Equals(c.Name, name, StringComparison.OrdinalIgnoreCase)).ToList();
+        await WriteAllAsync(data);
+    }
+
+    public async Task RemoveStarshipAsync(string name)
+    {
+        var data = await ReadAllAsync();
+        data.Starships = data.Starships?.Where(s => !string.Equals(s.Name, name, StringComparison.OrdinalIgnoreCase)).ToList();
+        await WriteAllAsync(data);
+    }
+
+    public async Task RemovePlanetAsync(string name)
+    {
+        var data = await ReadAllAsync();
+        data.Planets = data.Planets?.Where(p => !string.Equals(p.Name, name, StringComparison.OrdinalIgnoreCase)).ToList();
+        await WriteAllAsync(data);
+    }
+
+    public async Task ClearAllAsync()
+    {
+        await WriteAllAsync(new SearchHistoryData());
+    }
+
+    private async Task<SearchHistoryData> ReadAllAsync()
+    {
+        try
+        {
+            if (!File.Exists(_dataPath))
+                return new SearchHistoryData();
+
+            using var fs = File.OpenRead(_dataPath);
+            return await JsonSerializer.DeserializeAsync<SearchHistoryData>(fs) ?? new SearchHistoryData();
+        }
+        catch
+        {
+            return new SearchHistoryData();
+        }
+    }
+
+    private async Task WriteAllAsync(SearchHistoryData data)
+    {
+        try
+        {
+            var folder = Path.GetDirectoryName(_dataPath);
+            if (!Directory.Exists(folder))
+                Directory.CreateDirectory(folder!);
+
+            using var fs = File.Create(_dataPath);
+            await JsonSerializer.SerializeAsync(fs, data, new JsonSerializerOptions { WriteIndented = true });
+        }
+        catch
+        {
+            // ignore write failures
+        }
+    }
+
+    private class SearchHistoryData
+    {
+        public List<Character>? Characters { get; set; }
+        public List<Starship>? Starships { get; set; }
+        public List<Planet>? Planets { get; set; }
+    }
+}

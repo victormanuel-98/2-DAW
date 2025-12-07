@@ -1,0 +1,54 @@
+﻿using System;
+using Microsoft.Maui.Controls;
+using MauiAppDAW.Services;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace MauiAppDAW.Views;
+
+public class SimpleLoginPage : ContentPage
+{
+    Entry usernameEntry;
+    Entry passwordEntry;
+    Label messageLabel;
+
+    public SimpleLoginPage()
+    {
+        Title = "Login";
+
+        usernameEntry = new Entry { Placeholder = "Usuario" };
+        passwordEntry = new Entry { Placeholder = "Contraseña", IsPassword = true };
+        messageLabel = new Label { TextColor = (Color)Application.Current.Resources["SW-TextMuted"] };
+        var loginButton = new Button { Text = "Entrar", Style = (Style)Application.Current.Resources["SW-AccentButton"] };
+        loginButton.Clicked += OnLoginClicked;
+
+        Content = new VerticalStackLayout
+        {
+            Padding = 20,
+            Spacing = 12,
+            Children =
+            {
+                new Label { Text = "Iniciar sesión", Style = (Style)Application.Current.Resources["SW-Title"] },
+                usernameEntry,
+                passwordEntry,
+                loginButton,
+                messageLabel
+            }
+        };
+    }
+
+    private async void OnLoginClicked(object? sender, EventArgs e)
+    {
+        var username = usernameEntry.Text?.Trim();
+        var password = passwordEntry.Text?.Trim();
+
+        if (username == "User123" && password == "1234")
+        {
+            SearchChoicePage choicePage = App.ServiceProvider?.GetService<SearchChoicePage>() ?? new SearchChoicePage();
+            await Navigation.PushAsync(choicePage);
+        }
+        else
+        {
+            messageLabel.Text = "Usuario o contraseña incorrectos.";
+        }
+    }
+}

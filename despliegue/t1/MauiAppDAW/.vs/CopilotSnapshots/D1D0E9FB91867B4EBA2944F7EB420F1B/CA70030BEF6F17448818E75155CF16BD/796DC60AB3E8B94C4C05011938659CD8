@@ -1,0 +1,38 @@
+﻿using System;
+using MauiAppDAW.Views;
+using Microsoft.Maui.Controls;
+using MauiAppDAW.Services;
+
+namespace MauiAppDAW.Views;
+
+public partial class LoginPage : ContentPage
+{
+    public LoginPage()
+    {
+        InitializeComponent();
+    }
+
+    private async void OnLoginClicked(object sender, EventArgs e)
+    {
+        var username = txtUsername.Text?.Trim();
+        var password = txtPassword.Text?.Trim();
+
+        if (username == "User123" && password == "1234")
+        {
+            SwapiService swapi = null;
+
+            if (App.ServiceProvider != null)
+            {
+                swapi = App.ServiceProvider.GetService<SwapiService>();
+            }
+
+            var main = swapi != null ? new MainPage(swapi) : new MainPage(new SwapiService(new System.Net.Http.HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") }));
+
+            await Navigation.PushAsync(main);
+        }
+        else
+        {
+            lblMessage.Text = "Usuario o contraseña incorrectos.";
+        }
+    }
+}

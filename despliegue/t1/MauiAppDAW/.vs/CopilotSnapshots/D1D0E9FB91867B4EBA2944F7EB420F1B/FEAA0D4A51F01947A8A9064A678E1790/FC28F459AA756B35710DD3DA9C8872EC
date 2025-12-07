@@ -1,0 +1,37 @@
+﻿using System.Net.Http.Json;
+using MauiAppDAW.Models;
+
+namespace MauiAppDAW.Services;
+
+public class SwapiService
+{
+    private readonly HttpClient _httpClient;
+
+    public SwapiService()
+    {
+        _httpClient = new HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") };
+    }
+
+    public async Task<Character?> GetCharacterAsync(string name)
+    {
+        try
+        {
+            // Llamamos a la API de personas filtrando por nombre
+            var response = await _httpClient.GetFromJsonAsync<SwapiResponse>($"people/?search={name}");
+
+            // Devolver el primer resultado si existe
+            var result = response?.Results?.FirstOrDefault();
+            return result;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    // Modelo interno para deserializar la respuesta de SWAPI
+    private class SwapiResponse
+    {
+        public List<Character>? Results { get; set; }
+    }
+}

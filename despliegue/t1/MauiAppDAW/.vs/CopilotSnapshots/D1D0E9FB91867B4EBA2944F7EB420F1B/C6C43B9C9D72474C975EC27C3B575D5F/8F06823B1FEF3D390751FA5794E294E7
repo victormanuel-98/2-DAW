@@ -1,0 +1,37 @@
+﻿using System;
+using Microsoft.Maui.Controls;
+using Microsoft.Extensions.DependencyInjection;
+using MauiAppDAW.Services;
+
+namespace MauiAppDAW.Views;
+
+public partial class SearchChoicePage : ContentPage
+{
+    public SearchChoicePage()
+    {
+        InitializeComponent();
+
+        btnCharacters.Clicked += BtnCharacters_Clicked;
+        btnStarships.Clicked += BtnStarships_Clicked;
+        btnPlanets.Clicked += BtnPlanets_Clicked;
+    }
+
+    private async void BtnCharacters_Clicked(object? sender, EventArgs e)
+    {
+        SwapiService? swapi = App.ServiceProvider?.GetService<SwapiService>();
+        var page = swapi != null ? new MainPage(swapi) : new MainPage(new SwapiService(new System.Net.Http.HttpClient { BaseAddress = new Uri("https://swapi.dev/api/") }));
+        await Navigation.PushAsync(page);
+    }
+
+    private async void BtnStarships_Clicked(object? sender, EventArgs e)
+    {
+        var page = new StarshipsPage();
+        await Navigation.PushAsync(page);
+    }
+
+    private async void BtnPlanets_Clicked(object? sender, EventArgs e)
+    {
+        var page = new PlanetsPage();
+        await Navigation.PushAsync(page);
+    }
+}

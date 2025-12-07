@@ -1,0 +1,45 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiAppDAW.Models"
+             x:Class="MauiAppDAW.Views.PlanetsPage"
+             x:DataType="models:Planet"
+             Title="Planetas">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto">
+            <Entry x:Name="txtSearch" Placeholder="Buscar planetas..." />
+            <HorizontalStackLayout Grid.Column="1" Spacing="6">
+                <Button Text="Buscar" Clicked="OnSearchClicked" Style="{StaticResource SW-AccentButton}" />
+                <Button Text="Guardados" Clicked="OnSavedClicked" Style="{StaticResource SW-AccentButton}" />
+            </HorizontalStackLayout>
+        </Grid>
+
+        <CollectionView x:Name="cvResults" SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Planet">
+                    <Border Style="{StaticResource SW-Card}" Margin="0,4">
+                        <Grid ColumnDefinitions="80, *" RowDefinitions="Auto, Auto">
+                            <Image WidthRequest="70" HeightRequest="70" Aspect="AspectFill" Source="{Binding DisplayImageUrl}">
+                                <Image.Triggers>
+                                    <DataTrigger TargetType="Image" Binding="{Binding DisplayImageUrl}" Value="">
+                                        <Setter Property="Source" Value="https://via.placeholder.com/70" />
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Image" Binding="{Binding DisplayImageUrl}" Value="{x:Null}">
+                                        <Setter Property="Source" Value="https://via.placeholder.com/70" />
+                                    </DataTrigger>
+                                </Image.Triggers>
+                            </Image>
+
+                            <StackLayout Grid.Column="1" Padding="10,0,0,0" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontSize="18" TextColor="{StaticResource SW-Accent}" />
+                                <Label Text="Sistema: {Binding System}" FontSize="12" TextColor="{StaticResource SW-TextMuted}" />
+                                <Label Text="Planetas cercanos: {Binding NearbyPlanets}" FontSize="12" />
+                                <Label Text="Residentes famosos: {Binding FamousResidents}" FontSize="12" />
+                            </StackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

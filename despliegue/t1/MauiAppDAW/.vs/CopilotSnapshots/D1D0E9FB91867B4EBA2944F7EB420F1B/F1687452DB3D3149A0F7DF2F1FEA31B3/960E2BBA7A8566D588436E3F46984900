@@ -1,0 +1,63 @@
+﻿using System.Net.Http.Json;
+using MauiAppDAW.Models;
+
+namespace MauiAppDAW.Services;
+
+public class SwapiService
+{
+    private readonly HttpClient _httpClient;
+
+    public SwapiService(HttpClient httpClient)
+    {
+        _httpClient = httpClient;
+    }
+
+    public async Task<Character?> GetCharacterAsync(string name, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var response = await _httpClient.GetFromJsonAsync<SwapiResponse<Character>>($"people/?search={Uri.EscapeDataString(name)}", cancellationToken);
+            var result = response?.Results?.FirstOrDefault();
+            return result;
+        }
+        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+        {
+            throw;
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+    }
+
+    public async Task<List<Starship>?> GetStarshipsAsync(string name, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var response = await _httpClient.GetFromJsonAsync<SwapiResponse<Starship>>($"starships/?search={Uri.EscapeDataString(name)}", cancellationToken);
+            return response?.Results;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public async Task<List<Planet>?> GetPlanetsAsync(string name, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var response = await _httpClient.GetFromJsonAsync<SwapiResponse<Planet>>($"planets/?search={Uri.EscapeDataString(name)}", cancellationToken);
+            return response?.Results;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    private class SwapiResponse<T>
+    {
+        public List<T>? Results { get; set; }
+    }
+}

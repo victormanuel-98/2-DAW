@@ -1,0 +1,18 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:MauiAppDAW.Models"
+             x:DataType="models:Character"
+             x:Class="MauiAppDAW.Views.PersonDetailPage"
+             Title="Detalle del personaje">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="{Binding Name}" FontSize="24"/>
+        <Label Text="{Binding Height}"/>
+        <Label Text="{Binding Mass}"/>
+        <Label Text="{Binding HairColor}"/>
+        <Label Text="{Binding SkinColor}"/>
+        <Label Text="{Binding EyeColor}"/>
+        <Label Text="{Binding BirthYear}"/>
+        <Label Text="{Binding Gender}"/>
+    </VerticalStackLayout>
+</ContentPage>

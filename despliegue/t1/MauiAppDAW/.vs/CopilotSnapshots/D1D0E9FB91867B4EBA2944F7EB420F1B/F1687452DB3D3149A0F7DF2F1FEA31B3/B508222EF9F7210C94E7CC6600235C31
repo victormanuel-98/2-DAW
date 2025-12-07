@@ -1,0 +1,11 @@
+﻿using Microsoft.Maui.Controls;
+
+namespace MauiAppDAW.Views;
+
+public partial class StarshipsPage : ContentPage
+{
+    public StarshipsPage()
+    {
+        InitializeComponent();
+    }
+}

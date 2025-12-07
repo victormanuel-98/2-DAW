@@ -1,0 +1,537 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vrida\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-fbe9d0d1-8691-4e7b-ba29-44f7eb420f1b.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\persondetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\persondetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\starshipspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\starshipspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\starshipspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\starshipspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\behaviors\\imageurlbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:behaviors\\imageurlbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\services\\swapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:services\\swapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:models\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\mauiappdaw.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:mauiappdaw.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\persondetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\persondetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\personlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\personlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\personlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\personlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\simpleloginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\simpleloginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\searchchoicepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\searchchoicepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\searchchoicepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\searchchoicepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\planetspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\planetspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\planetspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\planetspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\models\\starship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:models\\starship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\models\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:models\\planet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\services\\searchhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:services\\searchhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|c:\\users\\vrida\\source\\repos\\mauiappdaw\\views\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350EA44C-760A-43E4-B0E9-FF7723BAD9A9}|MauiAppDAW.csproj|solutionrelative:views\\historypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HistoryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\HistoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\HistoryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\HistoryPage.xaml.cs",
+              "RelativeToolTip": "Views\\HistoryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:56:51.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HistoryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\HistoryPage.xaml",
+              "RelativeDocumentMoniker": "Views\\HistoryPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\HistoryPage.xaml",
+              "RelativeToolTip": "Views\\HistoryPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-07T14:56:41.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SearchHistoryService.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Services\\SearchHistoryService.cs",
+              "RelativeDocumentMoniker": "Services\\SearchHistoryService.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Services\\SearchHistoryService.cs",
+              "RelativeToolTip": "Services\\SearchHistoryService.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAMBUwKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:48:14.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Styles.xaml",
+              "ViewState": "AgIAAFYAAAAAAAAAAIBJwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T19:24:49.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T19:24:33.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "plan-fbe9d0d1-8691-4e7b-ba29-44f7eb420f1b.md",
+              "DocumentMoniker": "C:\\Users\\vrida\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-fbe9d0d1-8691-4e7b-ba29-44f7eb420f1b.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-fbe9d0d1-8691-4e7b-ba29-44f7eb420f1b.md",
+              "ToolTip": "C:\\Users\\vrida\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-fbe9d0d1-8691-4e7b-ba29-44f7eb420f1b.md",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-fbe9d0d1-8691-4e7b-ba29-44f7eb420f1b.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-05T15:55:07.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "Views\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T17:14:48.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StarshipsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\StarshipsPage.xaml",
+              "RelativeDocumentMoniker": "Views\\StarshipsPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\StarshipsPage.xaml",
+              "RelativeToolTip": "Views\\StarshipsPage.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwCMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T17:36:21.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StarshipsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\StarshipsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\StarshipsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\StarshipsPage.xaml.cs",
+              "RelativeToolTip": "Views\\StarshipsPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAABRwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:36:24.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonDetailPage.xaml",
+              "RelativeDocumentMoniker": "Views\\PersonDetailPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonDetailPage.xaml",
+              "RelativeToolTip": "Views\\PersonDetailPage.xaml",
+              "ViewState": "AgIAABgAAAAAAAAAAABBwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-04T15:27:26.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImageUrlBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Behaviors\\ImageUrlBehavior.cs",
+              "RelativeDocumentMoniker": "Behaviors\\ImageUrlBehavior.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Behaviors\\ImageUrlBehavior.cs",
+              "RelativeToolTip": "Behaviors\\ImageUrlBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:18:53.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PlanetsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PlanetsPage.xaml",
+              "RelativeDocumentMoniker": "Views\\PlanetsPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PlanetsPage.xaml",
+              "RelativeToolTip": "Views\\PlanetsPage.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAIBJwCwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T17:36:28.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PlanetsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PlanetsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PlanetsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PlanetsPage.xaml.cs",
+              "RelativeToolTip": "Views\\PlanetsPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAABRwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:36:31.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Starship.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Models\\Starship.cs",
+              "RelativeDocumentMoniker": "Models\\Starship.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Models\\Starship.cs",
+              "RelativeToolTip": "Models\\Starship.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAMBUwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:44:22.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SearchChoicePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\SearchChoicePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\SearchChoicePage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\SearchChoicePage.xaml.cs",
+              "RelativeToolTip": "Views\\SearchChoicePage.xaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAABRwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:36:17.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SearchChoicePage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\SearchChoicePage.xaml",
+              "RelativeDocumentMoniker": "Views\\SearchChoicePage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\SearchChoicePage.xaml",
+              "RelativeToolTip": "Views\\SearchChoicePage.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T17:36:09.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Planet.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Models\\Planet.cs",
+              "RelativeDocumentMoniker": "Models\\Planet.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Models\\Planet.cs",
+              "RelativeToolTip": "Models\\Planet.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAMBUwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:44:27.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:55:28.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAABRwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:14:55.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SimpleLoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\SimpleLoginPage.cs",
+              "RelativeDocumentMoniker": "Views\\SimpleLoginPage.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\SimpleLoginPage.cs",
+              "RelativeToolTip": "Views\\SimpleLoginPage.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAIBJwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:19:15.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-04T16:28:45.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Models\\Character.cs",
+              "RelativeDocumentMoniker": "Models\\Character.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Models\\Character.cs",
+              "RelativeToolTip": "Models\\Character.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAMBUwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:30:35.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PersonDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PersonDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonDetailPage.xaml.cs",
+              "RelativeToolTip": "Views\\PersonDetailPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:27:50.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Views\\MainPage.xaml.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAABRwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:22:40.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SwapiService.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Services\\SwapiService.cs",
+              "RelativeDocumentMoniker": "Services\\SwapiService.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Services\\SwapiService.cs",
+              "RelativeToolTip": "Services\\SwapiService.cs",
+              "ViewState": "AgIAAPoBAAAAAAAAAMBUwP0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T17:09:28.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PersonListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonListPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PersonListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonListPage.xaml.cs",
+              "RelativeToolTip": "Views\\PersonListPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:26:06.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PersonListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonListPage.xaml",
+              "RelativeDocumentMoniker": "Views\\PersonListPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\PersonListPage.xaml",
+              "RelativeToolTip": "Views\\PersonListPage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAABBwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-04T15:25:18.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Views\\MainPage.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T20:31:50.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MauiAppDAW.csproj",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\MauiAppDAW.csproj",
+              "RelativeDocumentMoniker": "MauiAppDAW.csproj",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\MauiAppDAW.csproj",
+              "RelativeToolTip": "MauiAppDAW.csproj",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwBMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T15:29:37.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-04T16:39:02.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\vrida\\source\\repos\\MauiAppDAW\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAEBVwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T16:01:59.471Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
