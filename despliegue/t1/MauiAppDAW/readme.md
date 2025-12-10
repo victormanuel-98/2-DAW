@@ -53,13 +53,13 @@ Opcional (CLI):
 # Imágenes del Proyecto
 
 ## API en Azure
-![API desde Azure]()
+![API desde Azure](./imagenes/APIAzure.png)
 
 ## Despliegue de la API desde Visual Studio Code
-![API en VSCode]()
+![API en VSCode](./imagenes/APIvscodeScreen.png)
 
 ## Estructura de carpetas en Visual Studio Code
-![Tree en vscode]()
+![Tree en vscode](./imagenes/APItree)
 
 ## Gif con el recorrido de la API desde Visaul Studio 2022 con SWApi
-![Recorrido API Star Wars]()
+![Recorrido API Star Wars](./imagenes/APIRecorrido.gif)
